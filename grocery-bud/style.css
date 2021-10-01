@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    background-color: #f1f4f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    width: 600px;
+    padding: 2rem;
+    box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.header h2{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container input{
+    flex: 1;
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+.input-container .btn{
+    padding: 0.5rem 1.6rem;
+    background-color: #645cff;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-container .btn:hover{
+    background-color: #7f79f8;
+}
+
+.alert{
+    padding: 0.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.alert.danger{
+    background-color: rgb(252, 171, 157);
+    color: white;
+}
+
+.grocery-list{
+    margin-top: 1rem;
+}
+
+.each-item{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.each-item button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.fa-edit{
+    color: rgb(173, 230, 59);
+}
+
+.fa-trash{
+    color: tomato;
+}

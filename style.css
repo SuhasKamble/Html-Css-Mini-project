@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    place-items: center;
+    /* background-color: lightblue; */
+}
+
+
+
+.hero-content h1{
+    font-size: 2.7rem;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.hero-container img{
+    /* max-width: 100%; */
+    width: 600px;
+}
+
+.hero-content .btn{
+    padding: 0.7rem 1.5rem;
+    background-color: #FF8E3C;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    animation: bounce 0.8s linear infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.projects{
+    padding: 4rem 0;
+    background-color: #F8FAFC;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+.item{
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.item:hover{
+    transform: scale(1.08);
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title h2{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.title .line{
+    height: 4px;
+    width: 90px;
+    background-color: #FF8E3C;
+    margin: 0 auto;
+}
+
+.name{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.name a{
+    font-size: 1.3rem;
+    color: #222;
+    text-decoration: none;
+}
+
+.item img{
+    height: 200px;
+}
+
+@media screen and (max-width:780px) {
+    .hero-container{
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-content p{
+        font-size: 17px;
+    }
+
+    .hero-content .btn{
+        padding: 0.6rem 1.4rem;
+        font-size: 18px;
+    }
+
+    .title h2{
+        font-size: 1.9rem;
+    }
+
+    .title .line{
+        width: 60px;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 3rem ;
+    }
+
+    .item:hover{
+        transform: scale(1);
+    }
+}

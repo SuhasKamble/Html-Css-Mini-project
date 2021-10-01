@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f4f7;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #fff;
+    box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+.nav-center{
+    width: 90vw;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger{
+    display: none;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.hamburger i{
+    color: #645CFF;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #645CFF;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li{
+    margin:0 1rem;
+}
+
+.nav-links li a{
+    color: #222;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nav-links li a:hover{
+    color: #645CFF;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links li{
+    margin-left: 1rem;
+}
+
+.social-links li a:hover{
+    color: #7973fa;   
+}
+
+@media screen and (max-width:780px) {
+
+    .logo{
+        font-size: 1.8rem;
+    }
+    
+    .nav-center{
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .social-links{
+        display: none;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 5rem;
+        flex-direction: column;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        align-items: flex-start;
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in;
+    }
+
+    .nav-links.show-links{
+        height: 210px;
+    }
+
+
+    .nav-links li{
+        padding: 1rem 0;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+        padding-left: 1rem;
+        transition: 0.3s ease-in;
+
+    }
+
+    .nav-links li a{
+        transition: 0.3s ease-in;
+    }
+
+    .nav-links li:hover{
+        background-color: #645CFF;
+        padding-left: 1.5rem;
+    }
+
+    .nav-links li:hover > a{
+        color: #fff;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+}

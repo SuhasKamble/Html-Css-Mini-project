@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    height: 4rem;
+    box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-center{
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #645CFF;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-center li{
+    margin-left: 2rem;
+}
+
+.nav-center li a{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+main{
+    height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #F8FAFC;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h2{
+    padding: 1rem 1.5rem;
+    background-color: #222222;
+    border-radius: 5px;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.color{
+    color:  #645cff;
+}
+
+.btn{
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #222222;
+    background-color: transparent;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #222222;
+    color: white;
+}
+
+@media screen and (max-width:780px) {
+    .container h2{
+        font-size: 2.5rem;
+    }
+}
